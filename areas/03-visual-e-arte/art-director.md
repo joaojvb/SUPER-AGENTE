@@ -176,5 +176,39 @@ Para que uma imagem, cena 3D ou interface cause impacto visceral, o observador d
 > **Saída Inaceitável (Amadora):** "High-end packshot of a luxury male perfume bottle on a dark rock, dramatic lighting, volumetric fog, 8k, photorealistic, unreal engine."
 > **Saída Padrão AETHER-OMEGA:** "Extreme low-angle monolithic architectural packshot of a heavy, brutalist parfum flacon crafted from smoked hand-blown borosilicate glass with a raw forged-carbon magnetic cap. The bottle rests precariously on the razor-sharp edge of a wet, fractured black volcanic obsidian slab partially submerged in still, pitch-black mirror water. Microscopic beads of cold condensation cling to the dark glass surface, catching a surgical, golden-amber laser rim light from behind. Dramatic Chiaroscuro lighting with a 16:1 contrast ratio: a narrow beam of warm tungsten light slices diagonally through dense, low-hanging mineral fog, projecting intricate refractive caustics onto the wet basalt below while leaving 80% of the environment in abyssal shadow. Shot on a Hasselblad H6D-100c medium format camera with a 120mm f/4 Macro lens, focus-stacked for edge-to-edge tack-sharp micro-texture on the glass grain and stone fractures, Kodak Ektachrome E100 color science with deep crushed blacks, burnt sienna highlights, and zero digital smoothing. --ar 4:5 --style raw --stylize 250 --v 6.1"
 
-## §12. CONHECIMENTO ABSORVIDO (AUTO-FEED)
+## §12. CONHECIMENTO ABSORVIDO (AUTO-FEED DE `F:\01`)
+
+### 12.1. Os 7 Modos Operacionais de Síntese Visual (Extraído de `F:\01\REFERENCIAS.canvas`)
+1. **MODO 1: Cinema ⭐ (Fotografia Cinematográfica Hiper-Realista):** Combinação obrigatória de `[Ângulo/Enquadramento]` + `[Color Grading]` + `[Iluminação Física]` + `[Câmera/Lente]`.
+2. **MODO 2: Multi-Referência (Fusão de Identidade + Atmosfera):** A partir de 2+ imagens de referência, trava a identidade anatômica/produto da Imagem A e transfere 100% da iluminação, paleta, textura e atmosfera da Imagem B.
+3. **MODO 3: Shots Cinematográficos (Storyboarding & Continuidade):** Gera uma sequência de frames ou grid narrativo mantendo consistência absoluta de personagem, figurino, paleta cromática e atmosfera através de múltiplos ângulos.
+4. **MODO 4: Ultra Real Smartphone (Estética Orgânica Imperfeita):** Simula captura autêntica de celular sem cara de estúdio/IA: ruído de sensor pequeno, micro-tremido (*motion blur* leve), HDR levemente estourado nas altas luzes, compressão natural e balanço de branco imperfeito.
+5. **MODO 5: Estilo Self (Front-Camera Candid):** Estética de câmera frontal (`24mm–28mm`), distorção de braço estendido, flash de tela ou luz ambiente crua de quarto/elevador/rua, momento espontâneo real.
+6. **MODO 6: Next Scene (Continuidade Temporal):** Analisa um frame existente e projeta o próximo instante narrativo/emocional imediato (o que acontece 3 segundos depois), preservando cenário e física óptica.
+7. **MODO 7: Person Replacement ⭐ (Substituição Cirúrgica com Lock de Cena):** Substitui o sujeito na cena preservando 100% da nova identidade facial/corporal enquanto mantém o fundo, a direção da luz, o figurino e a composição originais intocados.
+
+### 12.2. Três Protocolos Mestres de Re-Iluminação Estrita (Relighting com Lock de Identidade)
+> **Regra Inviolável de Relighting:** Jamais alterar traços faciais, proporções, cabelo, roupa, pose ou enquadramento ao re-iluminar uma imagem base. Apenas a física da luz e a atmosfera mudam.
+
+* **Protocolo A — Soft Daylight Relight:** Substitui luz dura/artificial por luz do dia natural ultra-suave e difusa (janela grande ou céu nublado luminoso), sombras longas e aveludadas, transição tonal orgânica na pele e reflexos oculares (*catchlights*) limpos.
+* **Protocolo B — Black Light Silhouette & Rim Glow:** Converte a cena para chave baixa (*Low-Key*) dramática com fundo escuro profundo e feixe de contorno (*Rim Light*) intenso esculpindo apenas a silhueta, ombros, maxilar e fios de cabelo.
+* **Protocolo C — Surreal Dimensional Violet/Cyan Light Leaks:** Re-iluminação atmosférica onírica com feixes refrativos em Violeta Profundo (`#7C3AED`) e Ciano Elétrico (`#06B6D4`), vazamentos de luz analógicos (*light leaks*) e aberração cromática suave nas bordas iluminadas.
+
+### 12.3. Protocolo Mestre de Restauração & Upscale 4K Real (Micro-Texture Reconstruction)
+* Ao restaurar ou ampliar imagens de baixa resolução: **proibido alucinar novos traços faciais ou alterar a expressão**. Reconstruir apenas micro-texturas físicas plausíveis: poros epidérmicos, vellus hair (penugem facial), trama individual dos fios de tecido, micro-arranhões em metais, reflexos corneanos nítidos e separação limpa de fios de cabelo.
+
+### 12.4. Dicionário Completo de Câmera, Enquadramento e POV (`F:\01\REFERENCIAS.canvas`)
+* **Ângulos Verticais & Horizontais:** `eye-level shot`, `low-angle shot`, `extreme low-angle / worm's-eye view`, `high-angle shot`, `bird's-eye view / overhead top-down`, `dutch angle / tilted frame`, `front view`, `three-quarter (3/4) view`, `profile / side view`, `back view / rear three-quarter`, `over-the-shoulder (OTS)`.
+* **Distâncias de Enquadramento (Framing):** `establishing wide shot`, `extreme wide shot (EWS)`, `full body shot (full length)`, `cowboy shot / American shot (mid-thigh up)`, `medium shot (waist up)`, `medium close-up (chest/shoulders up)`, `close-up (face)`, `extreme close-up (ECU / macro detail)`, `two-shot`, `group shot`.
+* **Composição & Geometria:** `rule of thirds`, `dead-center symmetrical framing`, `golden ratio spiral`, `leading lines`, `frame within a frame`, `negative space dominance`, `foreground occlusion / depth layering`, `diagonal tension`, `triangular composition`.
+* **Movimento & POVs Especiais:** `tracking / dolly shot`, `whip pan`, `orbital arc shot`, `handheld kinetic`, `crane / jib sweep`, `first-person POV`, `security camera / CCTV high-corner POV`, `peephole / fisheye door viewer POV`, `mirror reflection shot`, `through-glass / rain-streaked window POV`, `smartphone screen viewfinder POV`, `drone FPV dive`.
+
+### 12.5. Fluxo de Resolução de Produção & Stack de Referências Web (`F:\01`)
+* **Padrão de Canvas Editorial/Social:** Criar e compor sempre em **4000x5000px (Proporção 4:5, 72dpi)** para precisão cirúrgica de máscaras, tipografia e grão; exportar versão final de publicação em **2000x2500px** para nitidez máxima sem compressão destrutiva.
+* **Stack de Shaders e Referências Visuais de Apoio:**
+  * `holocloth.vercel.app` -> Shaders 3D de tecido iridescente e física de pano reativa.
+  * `grainrad.com` -> Processamento de dithering, retícula halftone, granulação analógica e efeitos CRT/ASCII.
+  * `ascii.krackeddevs.com` -> Estética terminal retro-futurista em âmbar/fósforo e renderização ASCII em tempo real.
+  * `bookofshapes.com/?tag=grid` -> Sistemas de grids suíços, geometria modular e ancoragem tipográfica.
+
 <!-- A IA adiciona automaticamente aqui novos Style Guides e referências extraídas de imagens enviadas no chat -->

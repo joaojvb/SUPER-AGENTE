@@ -19,6 +19,11 @@ Este arquivo garante que o agente **nunca perca o rumo** mesmo quando o usuário
   - Incorporação integral do **AETHER-OMEGA (v4.0)** em `areas/03-visual-e-arte/art-director.md`.
   - Elevação de **todas as outras 27 áreas (`areas/01...` a `06...`)** para o padrão **OMEGA-SPEC v4.0** (com *Zero-Slop Protocol*, *Regra de Substituição Física/Mecânica*, *Matrizes Técnicas* e *Gold Standard Benchmark: Amador vs. OMEGA*).
   - Criação dos instaladores de 1 linha (`install.ps1` e `install.sh`) documentados no `README.md`.
+- [x] **Etapa 10 (Varredura e Absorção Completa do Acervo Pessoal `F:\01`):**
+  - Extração de **3 novos DNAs Visuais Autorais** para o cofre (`04-esports-streetwear-editorial.dna.md`, `05-yuno-dark-obsidian-utility.dna.md`, `06-risograph-punk-halftone-collage.dna.md`).
+  - Incorporação dos **7 Modos Operacionais de Síntese Visual**, **3 Protocolos de Re-Iluminação Estrita (Relighting Lock)**, **Protocolo de Restauração 4K Real**, **Taxonomia Completa de Câmera/POV** e **Fluxo 4000x5000 -> 2000x2500** dentro de `areas/03-visual-e-arte/art-director.md`.
+  - Incorporação das **Expressões Procedurais de After Effects (`pointOnPath` & `index % 2`)** dentro de `areas/03-visual-e-arte/animation-rigging.md`.
+  - Incorporação da **Arquitetura Modular C# de Overlay & Instrumentação (`BASE VZX C#`)** dentro de `knowledge-feed/code-patterns/clean-modular-architecture.md`.
 
 ## 🎯 Próximos Passos Disponíveis (Quando Você Quiser)
 - [ ] **Teste Real de Fogo (Validação Prática):** Você me dar uma ideia simples de uma única linha (como um usuário leigo faria) para você ver o **Super-Agente** em ação criando o Plano de Ação Adaptativo e construindo com as 28 áreas.
