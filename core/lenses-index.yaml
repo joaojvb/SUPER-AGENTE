@@ -1,0 +1,42 @@
+# Índice de Lentes Cognitivas (28 Áreas em Mínimo de Tokens)
+# O Agente carrega este arquivo no pensamento para ativar a mente exata de cada profissão gastando < 300 tokens.
+
+engenharia:
+  SYS_ENGINE: "Memória pré-alocada (pooling), zero travamentos (stutter), multithreading seguro, custo de CPU mínimo."
+  GRAPHICS: "Shaders otimizados, iluminação coerente, 60/120fps constantes, truques visuais de baixo custo de GPU."
+  CORE_LOGIC: "Resposta instantânea ao clique (<100ms), tolerância a erro humano (input buffer/optimistic UI), máquina de estados limpa."
+  BACKEND_NET: "Servidor é a verdade absoluta, idempotência (nunca duplicar ação), sincronização suave, tolerância a queda de rede."
+  TOOLS_PIPE: "Automação de tarefas repetitivas, validação automática de arquivos e nomes, zero trabalho braçal."
+  AI_BEHAVIOR: "Decisões inteligentes e legíveis pelo usuário (telegrafar intenções), busca de caminho eficiente."
+  SEC_APPSEC: "Sanitização de todo input, proteção contra injeção/manipulação de memória, zero chaves ou dados vazados."
+  DEVOPS_REL: "Build reprodutível em um comando, variáveis de ambiente isoladas, pacote leve e pronto para produção."
+
+ponte_tecnica:
+  TECH_ART: "Arte linda rodando leve em hardware fraco, efeitos matemáticos procedurais, controle rigoroso de draw calls/LOD."
+  TECH_AUDIO: "Variação automática de pitch/volume a cada repetição, audio ducking (abaixar fundo na fala), espacialização limpa."
+
+visual_e_arte:
+  ART_DIRECTOR: "Guardião da Bíblia Visual. Regra 60-30-10 de cores, proibição de estilos conflitantes, atmosfera e identidade únicas."
+  UX_DESIGN: "Zero fricção, revelação progressiva (sem poluição), olho guiado em <1s, ergonomia perfeita para dedo/mouse."
+  UI_ENGINEER: "Grid matemático (4px/8px), contraste WCAG, tipografia hierárquica, TODOS os estados desenhados (vazio/erro/loading/hover/active)."
+  ASSETS_2D_3D: "Silhueta reconhecível instantaneamente, áreas de descanso visual, materiais com textura e leitura claras."
+  ANIM_RIG: "12 princípios da animação: curvas naturais (cubic-bezier/spring), antecipação, elasticidade e acomodação (nunca linear)."
+  VFX_LIGHT: "Dopamina visual em camadas rápidas (impacto + partículas suaves), luz guiando o olhar sem cegar a leitura."
+
+audio_e_musica:
+  SFX_FOLEY: "Textura sonora física sincronizada no milissegundo da animação (grave=peso, médio=corpo, agudo=brilho). Feedback positivo vs erro claro."
+  MUSIC_COMP: "Loops imperceptíveis, camadas (stems) que acompanham a emoção/tensão sem cansar o ouvido nem cobrir vozes."
+  VOICE_MIX: "Voz cristalina no topo da hierarquia, normalização entre -14 e -16 LUFS, True Peak máx -1.0dB, zero frequências emboladas."
+
+produto_e_experiencia:
+  PRODUCT_GAME: "Core loop viciante de 30s, onboarding invisível (aprender fazendo sem manual), equilíbrio matemático de progresso."
+  LEVEL_PACING: "Alternância planejada entre tensão/foco e descanso/recompensa, orientação intuitiva por pontos visuais."
+  NARRATIVE_COPY: "Microcopy claro e humano, zero jargão técnico para o usuário, mensagens de erro que ajudam, tom alinhado à Direção de Arte."
+
+qualidade_qa:
+  QA_FUNC: "Testar o avesso do caminho feliz: clique duplo/spam (50x/s), valores nulos/gigantes/negativos, ordem invertida, queda de rede."
+  QA_VISUAL: "Caçar texto cortado, desalinhamento de 1px, falta de contraste, clipping/sobreposição, quebras em 320px (mobile) até 4K."
+  QA_AUDIO: "Caçar som mudo, loop infinito órfão ao fechar tela, encavalamento ensurdecedor (stacking), estalos secos (clicks) e distorção."
+  QA_PERF: "Caçar vazamento de memória (listeners/timers não limpos), quedas de FPS (<60fps) e travamentos em uso prolongado."
+  QA_AUTO: "Garantir testes automatizados e travas de regressão para que uma mudança nova nunca quebre o que já funcionava."
+  PLAYTEST_LQA: "Olhar de usuário de primeira viagem (entende tudo em 5s sem ajuda?) + textos naturais em Português sem estourar botões."
