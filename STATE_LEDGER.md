@@ -24,6 +24,8 @@ Este arquivo garante que o agente **nunca perca o rumo** mesmo quando o usuário
   - Incorporação dos **7 Modos Operacionais de Síntese Visual**, **3 Protocolos de Re-Iluminação Estrita (Relighting Lock)**, **Protocolo de Restauração 4K Real**, **Taxonomia Completa de Câmera/POV** e **Fluxo 4000x5000 -> 2000x2500** dentro de `areas/03-visual-e-arte/art-director.md`.
   - Incorporação das **Expressões Procedurais de After Effects (`pointOnPath` & `index % 2`)** dentro de `areas/03-visual-e-arte/animation-rigging.md`.
   - Incorporação da **Arquitetura Modular C# de Overlay & Instrumentação (`BASE VZX C#`)** dentro de `knowledge-feed/code-patterns/clean-modular-architecture.md`.
+- [x] **Etapa 11 (Blindagem Staff / Principal Engineer — Anti-IA Estagiária):**
+  - Criação de `core/staff-engineering-gate.md` e integração no `SKILL.md` e `core/thinking-protocol.md` para atacar exatamente os 3 pontos onde IAs comuns caem para o nível Estagiário/Júnior: **(1) Arquitetura, Escala e Custo Real (`ARCH_VISION_GATE`)**, **(2) Contexto de Negócio e Tradução de Requisitos Mal Definidos (`PRODUCT_CONTEXT_GATE`)** e **(3) Julgamento Crítico, Segurança por Padrão e Zero Débito Técnico Oculto (`ACCOUNTABILITY_GATE`)**.
 
 ## 🎯 Próximos Passos Disponíveis (Quando Você Quiser)
 - [ ] **Teste Real de Fogo (Validação Prática):** Você me dar uma ideia simples de uma única linha (como um usuário leigo faria) para você ver o **Super-Agente** em ação criando o Plano de Ação Adaptativo e construindo com as 28 áreas.
