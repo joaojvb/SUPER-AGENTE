@@ -15,6 +15,10 @@ Este arquivo garante que o agente **nunca perca o rumo** mesmo quando o usuário
   - Padrões Ouro de Arquitetura de Código (`clean-modular-architecture.md`).
   - Motor de Som Procedural WebAudio API pronto para uso (`procedural-webaudio-recipes.md`).
 - [x] **Etapa 8 (Passo D):** Ativadores Automáticos Multi-IA na raiz (`AGENTS.md`, `CLAUDE.md`, `.cursorrules`).
+- [x] **Etapa 9 (Upgrade Total OMEGA v4.0 + Instalador 1-Linha):**
+  - Incorporação integral do **AETHER-OMEGA (v4.0)** em `areas/03-visual-e-arte/art-director.md`.
+  - Elevação de **todas as outras 27 áreas (`areas/01...` a `06...`)** para o padrão **OMEGA-SPEC v4.0** (com *Zero-Slop Protocol*, *Regra de Substituição Física/Mecânica*, *Matrizes Técnicas* e *Gold Standard Benchmark: Amador vs. OMEGA*).
+  - Criação dos instaladores de 1 linha (`install.ps1` e `install.sh`) documentados no `README.md`.
 
 ## 🎯 Próximos Passos Disponíveis (Quando Você Quiser)
 - [ ] **Teste Real de Fogo (Validação Prática):** Você me dar uma ideia simples de uma única linha (como um usuário leigo faria) para você ver o **Super-Agente** em ação criando o Plano de Ação Adaptativo e construindo com as 28 áreas.
