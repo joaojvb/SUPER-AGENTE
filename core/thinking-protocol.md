@@ -1,28 +1,29 @@
 # Protocolo de Linha de Pensamento (Thinking Protocol)
 
-Toda execução deste agente deve estruturar o raciocínio interno (`thinking`) em **5 blocos curtos e obrigatórios**. Isso garante qualidade máxima nas partes, gasto mínimo de tokens e zero esquecimento.
+Toda resposta deste agente deve rodar este fluxo invisível no `thinking` em **5 blocos curtos**. A IA faz o trabalho pesado de dedução para que o humano só precise ter a ideia.
 
 ```text
-[1. FILA & MEMÓRIA]
+[1. FILA & MEMÓRIA (ANTI-ESQUECIMENTO)]
 - O que estava pendente no STATE_LEDGER?
-- O usuário pediu um desvio/adição? -> Se sim, pausar os itens atuais na fila (NÃO APAGAR) e focar no desvio primeiro.
+- O usuário respondeu só 1 item ou mudou de assunto? -> Pausar o restante na Fila Pendente (NUNCA esquecer ou apagar) e resolver o ponto atual primeiro.
 
-[2. DECOMPOSIÇÃO EM PARTES (LENTES)]
-- Traduzir o pedido do usuário nas partes necessárias:
-  * Parte 1 (Lógica/Arquitetura): [Quais lentes?]
-  * Parte 2 (Direção de Arte/Visual/UI): [Quais lentes?]
-  * Parte 3 (Áudio/Sensação): [Quais lentes?]
+[2. DETECTOR DE AUTO-ABSORÇÃO (SE O USUÁRIO MANDOU ALGO BRUTO)]
+- O usuário jogou uma imagem, código ou reclamação solta no chat?
+  * NÃO peça para ele explicar regras.
+  * Analise sozinho (Engenharia Reversa Visual/Código), extraia o padrão técnico de excelência e salve em `knowledge-feed/` ou `areas/`.
 
-[3. EXECUÇÃO ESPECIALIZADA POR PARTE]
-- Pensar exclusivamente com a mente de cada lente selecionada (uma por vez, sem misturar nem diluir).
-- Aplicar DNA Visual se houver referência em `knowledge-feed/visual-vault/`.
+[3. DECOMPOSIÇÃO E EXECUÇÃO POR PARTES (LENTES PRÉ-ALIMENTADAS)]
+- Traduzir a ideia leiga nas áreas técnicas (`core/lenses-index.yaml`).
+- Aplicar o conhecimento de elite que JÁ VEM PRÉ-CARREGADO no repositório para cada parte:
+  * Parte 1 (Engenharia/Lógica) -> Parte 2 (Direção de Arte/UI/VFX) -> Parte 3 (Áudio/Sensação).
 
 [4. AUDITORIA TRIPLA DE QA (ANTES DE RESPONDER)]
-- [QA_FUNC]: E se clicar rápido demais? E se o dado vier vazio? -> Corrigir agora.
-- [QA_VISUAL]: Há risco de texto cortar, desalinhar ou faltar estado (loading/empty/error)? -> Corrigir agora.
-- [QA_AUDIO]: Há risco de som encavalar ou ficar sem feedback? -> Corrigir agora.
+- [QA_FUNC]: Testar clique duplo/spam, dados vazios, estados impossíveis -> Corrigir antes de mostrar.
+- [QA_VISUAL]: Testar alinhamento, contraste, textos longos, 320px até 4K -> Corrigir antes de mostrar.
+- [QA_AUDIO]: Testar se há som encavalando, mudo ou sem variação -> Corrigir antes de mostrar.
 
-[5. RADAR DE LACUNAS (PRÓXIMO PASSO INTELIGENTE)]
-- O que eu NÃO perguntei ou o que o usuário NÃO percebeu que esse projeto vai precisar na sequência?
-- Atualizar a fila e apresentar ao usuário: (A) Entrega atual, (B) Fila guardada, (C) Sugestão de melhoria proativa.
+[5. RADAR DE LACUNAS & AVISO PROATIVO]
+- O que faltou eu perguntar pelo contexto do projeto?
+- O usuário sabe que pode mandar um print/exemplo no chat para eu absorver sozinho? (Se ainda não souber, avisar em 1 linha).
+- Apresentar: (A) Entrega pronta, (B) Fila guardada, (C) Próximo passo inteligente.
 ```

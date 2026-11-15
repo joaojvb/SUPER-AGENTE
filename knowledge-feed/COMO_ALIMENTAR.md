@@ -1,46 +1,32 @@
-# Guia Prático: Como Alimentar o Super-Agente (Visual e Não-Visual)
+# Como Funciona a Inteligência Pré-Alimentada e a Auto-Absorção Zero-Esforço
 
-Este diretório (`knowledge-feed/`) é o **tanque de combustível** do seu agente. Tudo o que você coloca aqui refina o cérebro das 28 áreas sem você precisar reescrever o agente principal.
-
----
-
-## 1. Como Alimentar com IMAGENS (Direção de Arte, UI, UX, VFX, 2D/3D)
-
-### Passo a Passo Prático:
-1. **Jogue a imagem na pasta:** Salve qualquer print de tela, interface bonita, paleta de cores, foto de jogo ou referência visual dentro de:
-   `knowledge-feed/visual-vault/referencias-imagens/`
-   *(Exemplo: `tela-login-futurista.png` ou `hud-rpg-escuro.jpg`)*.
-2. **Peça para o Agente absorver:** No chat, basta dizer:
-   > *"Absorva as novas imagens da pasta `referencias-imagens`"* (ou mencione a imagem direto no chat com `@caminho/da/imagem.png` dizendo *"Transforme em DNA Visual"*).
-3. **O que o Agente faz sozinho:**
-   - Ele ativa a mente do **Diretor de Arte (`ART_DIRECTOR`)** e do **UI Engineer (`UI_ENGINEER`)**.
-   - Ele lê os pixels da sua imagem UMA única vez (cores exatas em Hex, tipo de sombra, espessura de borda, fonte, clima, contraste) e cria um arquivo de texto super leve (`.dna.md`) dentro de `knowledge-feed/visual-vault/style-guides-extraidos/`.
-4. **Como funciona depois nos projetos:**
-   - Quando você pedir *"Cria um sistema X usando o estilo futurista"*, o agente **não precisa reler a imagem pesada**. Ele lê o `.dna.md` de 20 linhas em 1 segundo, gasta quase zero tokens e constrói tudo seguindo exatamente aquelas cores, bordas e luzes.
+Este repositório foi desenhado pensando em **duas perspectivas**:
+1. **A Perspectiva do Criador (Base de Elite Pré-Carregada):** O agente **já vem alimentado de fábrica** em todas as 28 áreas (`areas/` e `knowledge-feed/`). Ele não começa "vazio" esperando o usuário ensinar o que é um código limpo, uma Direção de Arte profissional ou um teste de QA.
+2. **A Perspectiva de Quem Baixa o Repositório (Zero Trabalho Manual):** Quem baixa o `SUPER-AGENTE` não precisa saber o que existe nas pastas nem precisa escrever regras técnicas. A própria IA avisa no chat que já tem o conhecimento carregado e oferece a opção de absorver referências extras sozinha.
 
 ---
 
-## 2. Como Alimentar as Outras Áreas (SEM Imagem)
+## Como a IA se Auto-Alimenta sem dar trabalho para a pessoa
 
-Para as áreas de **Código, Áudio, Produto/Game Design e QA**, você alimenta com **arquivos de texto (`.md`, `.txt`, `.json`) ou exemplos de código** nas pastas abaixo:
+A regra central deste agente é: **O humano nunca escreve regras técnicas; a IA deduz as regras sozinha.**
 
-### A) Alimentar Engenharia e Código (`knowledge-feed/code-patterns/`)
-* **O que jogar aqui:**
-  - Códigos que você achou muito bem feitos (ex: `meu-sistema-login.ts`, `movimentacao-personagem.cs`).
-  - Regras de tecnologia que você prefere (ex: *"Sempre usar Tailwind + React + Lucide Icons"*, ou *"Em Python, sempre usar FastAPI e tipagem estrita"*).
-* **Como funciona:** Antes de programar, as lentes de **Engenharia (`SYS_ENGINE`, `CORE_LOGIC`, `BACKEND_NET`)** olham essa pasta e imitam o seu padrão de código.
+### 1. Quando você (ou o usuário) só joga uma IMAGEM no chat
+* **O que a pessoa faz:** Só arrasta um print ou foto para o chat (sem precisar explicar cores, bordas ou salvar em pasta específica).
+* **O que a própria IA faz sozinha:**
+  1. Reconhece que é uma referência visual.
+  2. Aciona o **Diretor de Arte (`ART_DIRECTOR`)** no pensamento.
+  3. Deduz sozinha a paleta Hex, o tipo de iluminação, a curvatura das bordas, o estilo das fontes e o porquê daquela imagem ser bonita.
+  4. Salva automaticamente o DNA Visual em `knowledge-feed/visual-vault/style-guides-extraidos/` e já aplica no projeto.
 
-### B) Alimentar Áudio e Som (`knowledge-feed/audio-vault/`)
-* **O que jogar aqui:**
-  - Descrições ou receitas de som que você gosta (ex: *"Nos meus projetos, cliques de botão devem ser curtos e graves tipo madeira/mecânico, nunca bipes agudos"*).
-  - Links/nomes de bibliotecas de som ou scripts de WebAudio API / FMOD.
-* **Como funciona:** O **Sound Designer (`SFX_FOLEY`)** e o **Tech Audio (`TECH_AUDIO`)** consultam essa pasta para gerar os sons procedurais ou escolher as frequências certas.
+### 2. Quando você (ou o usuário) só cola um CÓDIGO ou LINK no chat
+* **O que a pessoa faz:** Só cola um trecho de código que achou legal ou funcional (sem precisar dizer *"divida em arquivos pequenos"* ou *"não use biblioteca pesada"*).
+* **O que a própria IA faz sozinha:**
+  1. Faz engenharia reversa daquele código.
+  2. Identifica sozinha quais são os padrões de qualidade ali dentro (arquitetura, performance, organização, bibliotecas).
+  3. Escreve ela mesma as regras técnicas em `knowledge-feed/code-patterns/` e passa a programar daquele jeito.
 
-### C) Alimentar Qualidade e Testes (`knowledge-feed/qa-checklists/`)
-* **O que jogar aqui:**
-  - Qualquer erro ou irritação que você já passou (ex: *"Odeio quando o botão muda de tamanho ao carregar"*, *"Nunca deixe som continuar tocando ao trocar de aba"*).
-* **Como funciona:** Os 6 especialistas de **QA (`QA_FUNC`, `QA_VISUAL`, `QA_AUDIO`, `QA_PERF`)** leem essa lista antes de entregar qualquer resposta e bloqueiam o erro antes de você ver.
-
-### D) Alimentar uma Profissão Específica Diretamente (`areas/`)
-* Se você encontrar um artigo incrível, um resumo de livro ou uma técnica avançada de uma profissão específica (ex: *Level Design* ou *Segurança*), basta colar no final do arquivo correspondente dentro de `areas/` ou pedir no chat:
-  > *"Adicione esta regra dentro do especialista de Direção de Arte / QA Visual: [sua regra]"* — e o próprio agente edita o arquivo certo para você.
+### 3. Quando o usuário NÃO manda nada (Só tem a ideia na cabeça)
+* **O que a pessoa faz:** Diz apenas *"Quero criar um sistema/jogo X"*.
+* **O que a própria IA faz sozinha:**
+  1. Usa a **Base Pré-Alimentada de Fábrica** das 28 áreas (já preenchida por nós no repositório).
+  2. Avisa no chat de forma amigável: *"Já estou construindo com os padrões de Direção de Arte, Engenharia e QA do estúdio. Se tiver alguma imagem ou referência que goste, pode só jogar aqui no chat que eu absorvo o estilo na hora."*
