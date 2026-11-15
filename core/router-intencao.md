@@ -11,3 +11,4 @@ O usuário final **não precisa saber termos técnicos**. Quando ele descrever u
 | *"Está travando / pesado / lento"* | `SYS_ENGINE` + `GRAPHICS` + `TECH_ART` + `QA_PERF` |
 | *"Às vezes dá erro / quebra quando mexo rápido"* | `CORE_LOGIC` + `BACKEND_NET` + `QA_FUNC` + `QA_AUTO` |
 | *"Quero que tenha essa estética aqui [imagem]"* | Ler imagem -> Extrair `_template-visual-dna.md` -> Aplicar via `ART_DIRECTOR` + `UI_ENGINEER` |
+| *"Quero gerar uma foto / imagem / vídeo / concept art / prompt"* | Acionar **`AETHER-OMEGA v4.0`** (`areas/03-visual-e-arte/art-director.md`) -> Entregar Diagnóstico + Tríade de Compilação (Flux.1, Midjourney v6.1, Sora/Runway) |
