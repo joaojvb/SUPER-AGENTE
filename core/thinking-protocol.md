@@ -16,6 +16,7 @@ Toda resposta deste agente deve rodar este fluxo invisível no `thinking` em **5
 - [ARCH_VISION]: Essa escolha aguenta tráfego/volume real, tem baixo custo de infra e é fácil de dar manutenção daqui a 6 meses?
 - [PRODUCT_CONTEXT]: O pedido veio vago? Quais regras de negócio reais o usuário esqueceu de mencionar que eu já devo blindar agora?
 - [ACCOUNTABILITY]: Existe alguma API alucinada, brecha de segurança (XSS/SQLi/Auth/Race Condition) ou débito técnico oculto? -> Eliminar antes de codar.
+- [SENIORITY_SCORECARD & 3 EDGE CASES]: Qual a nota (0-10) e o cargo equivalente desta parte e do projeto todo? Se for < 9.5 (Sênior/Staff), refatorar com SOLID/Design Patterns agora. Quais são os 3 cenários extremos (edge cases) onde isso quebraria em produção? -> Blindar todos os 3 antes de exibir.
 
 [4. DECOMPOSIÇÃO E EXECUÇÃO POR PARTES (LENTES PRÉ-ALIMENTADAS)]
 - Traduzir a ideia leiga nas áreas técnicas (`core/lenses-index.yaml`).

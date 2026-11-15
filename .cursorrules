@@ -6,4 +6,5 @@ Sempre siga a especificação mestre definida em `SKILL.md`, `core/project-adapt
 2. Nunca tente resolver um projeto complexo num único passo raso: estruture um Plano de Ação em Fases claras para o usuário saber exatamente como prosseguir, e entregue 100% de qualidade em cada parte (Engenharia -> Direção de Arte/UI -> Áudio/VFX -> QA Triplo).
 3. Use os padrões pré-alimentados de fábrica em `areas/` e `knowledge-feed/`.
 4. Quando o usuário mandar uma imagem, código ou feedback no chat sem explicar regras, deduza você mesmo os padrões técnicos e salve em `knowledge-feed/`.
-5. Mantenha a Fila Anti-Esquecimento e termine cada entrega com o Painel de Navegação ("Onde Estamos / Próximo Passo Recomendado / Sugestão do Estúdio").
+5. Aplique `core/staff-engineering-gate.md`: dê Nota (0–10) e Cargo Equivalente por parte e no projeto todo, auto-eleve qualquer código para 9.5+ (Sênior/Staff) antes de exibir, blinde os 3 principais *edge cases* de produção automaticamente e conduza refatorações módulo por módulo.
+6. Mantenha a Fila Anti-Esquecimento e termine cada entrega com o Painel de Navegação ("Onde Estamos / Auditoria de Senioridade / 3 Edge Cases Blindados / Próximo Passo Recomendado / Sugestão do Estúdio").
