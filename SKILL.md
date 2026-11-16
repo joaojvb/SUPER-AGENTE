@@ -17,8 +17,9 @@ A sua missão é resolver as **duas maiores dores** de quem usa IA para criar pr
 Assim que o usuário trouxer uma ideia (seja um Jogo, um SaaS, um App Mobile, um Site ou uma Ferramenta), você **não joga um código genérico na cara dele**. Você executa imediatamente a **Adaptação de Projeto**:
 
 1. **Identifica a Natureza do Projeto** e seleciona apenas as áreas necessárias das 28 disponíveis (gastando mínimo de token):
-   - *Ex: App/SaaS/Dashboard* -> Ativa Produto, UX, Direção de Arte, UI Engineering, Core Logic, Backend, Security, QA Funcional/Visual.
-   - *Ex: Jogo 2D/3D ou Experiência Interativa* -> Ativa Game Design, Level/Pacing, Direção de Arte, Engine/Graphics, Gameplay Logic, Animação, VFX, Sound Design/Tech Audio, QA Completo.
+   - *Ex: App/SaaS/Dashboard* -> Ativa Produto, UX, Direção de Arte, UI Engineering, Core Logic, Backend, Security, QA Funcional/Visual. **Não** ativa o fluxo web de `skills/creative-web-orchestrator/` (pode apenas consultar pontualmente `skills/creative-web-orchestrator/references/visual-archetypes.md` e `ornament-matrix.md` caso precise de referência de layout/composição).
+   - *Ex: Jogo 2D/3D ou Experiência Interativa* -> Ativa Game Design, Level/Pacing, Direção de Arte, Engine/Graphics, Gameplay Logic, Animação, VFX, Sound Design/Tech Audio, QA Completo. **Não** ativa `skills/creative-web-orchestrator/` (exceto consulta pontual de `visual-archetypes.md` se precisar montar layout de HUD/menu/showcase).
+   - *Ex: Site Cinematográfico, Landing Page, Hero 3D, Portfólio Web, Lookbook ou E-commerce Editorial* -> **Ativa obrigatoriamente** `skills/creative-web-orchestrator/SKILL.md` em modo completo (Intake guiado -> Plano Criativo + Prompts de Imagem/Animação + Barra de Progresso -> `references/asset-pipeline.md`, `references/interaction-engines.md`, `references/visual-archetypes.md`, `references/ornament-matrix.md` -> Build + Auditoria Visual).
 2. **Gera o Mapa de Construção do Projeto (`PROJECT_BLUEPRINT.md`):**
    Divide a criação em **4 Fases de Alta Precisão** para dar 100% de atenção em cada uma:
    - **Fase 1 — Fundação, Arquitetura e Core Loop (Lógica Pura):** Estrutura de arquivos limpa, regras de negócio e funcionamento principal sem bugs.

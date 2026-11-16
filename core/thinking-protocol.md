@@ -19,6 +19,9 @@ Toda resposta deste agente deve rodar este fluxo invisível no `thinking` em **5
 - [SENIORITY_SCORECARD & 3 EDGE CASES]: Qual a nota (0-10) e o cargo equivalente desta parte e do projeto todo? Se for < 9.5 (Sênior/Staff), refatorar com SOLID/Design Patterns agora. Quais são os 3 cenários extremos (edge cases) onde isso quebraria em produção? -> Blindar todos os 3 antes de exibir.
 
 [4. DECOMPOSIÇÃO E EXECUÇÃO POR PARTES (LENTES PRÉ-ALIMENTADAS)]
+- Classificar escopo: é **Site / Landing Page / Portfólio / Loja Web**?
+  * SIM -> Acionar `skills/creative-web-orchestrator/SKILL.md` completo (5 Etapas + Barra de Progresso).
+  * NÃO (App/SaaS/Jogo/API) -> NÃO usar `creative-web-orchestrator`; no máximo consultar `references/visual-archetypes.md` / `ornament-matrix.md` se precisar montar layout visual.
 - Traduzir a ideia leiga nas áreas técnicas (`core/lenses-index.yaml`).
 - Aplicar o conhecimento de elite que JÁ VEM PRÉ-CARREGADO no repositório para cada parte:
   * Parte 1 (Engenharia/Lógica) -> Parte 2 (Direção de Arte/UI/VFX) -> Parte 3 (Áudio/Sensação).

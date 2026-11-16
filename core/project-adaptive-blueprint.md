@@ -10,6 +10,7 @@ Quando o usuário diz a ideia dele, classifique o projeto no `thinking` e ative 
 
 ### Tipo A: Aplicativo Web / SaaS / Dashboard / Sistema Comercial
 * **Foco Crítico:** Usabilidade instantânea, confiança nos dados, velocidade e estética limpa.
+* **Regra de Skill Web:** **Não** ativar o pipeline de sites (`skills/creative-web-orchestrator/SKILL.md`). Se precisar inspirar o layout ou composição da interface, consulte apenas pontualmente `skills/creative-web-orchestrator/references/visual-archetypes.md` e `ornament-matrix.md`.
 * **Sequência de Especialistas Ativados:**
   1. `PRODUCT_GAME` + `UX_DESIGN` (Fluxo sem fricção e jornada clara)
   2. `ART_DIRECTOR` + `UI_ENGINEER` (DNA Visual `02-clean-editorial-glass` ou `01-dark-tactical-cyber`, Grid 4px/8px, 5 estados de UI)
@@ -19,6 +20,7 @@ Quando o usuário diz a ideia dele, classifique o projeto no `thinking` e ative 
 
 ### Tipo B: Jogo (2D / 3D / Browser Game / Gamified App)
 * **Foco Crítico:** Core Loop viciante de 30 segundos, *Game Feel* (*Juice*), resposta nos primeiros 16ms (60fps) e imersão audiovisual.
+* **Regra de Skill Web:** **Não** ativar `skills/creative-web-orchestrator/`. Apenas se for montar uma tela de apresentação/menu/showcase fora do gameplay, pode consultar pontualmente `visual-archetypes.md` para layout.
 * **Sequência de Especialistas Ativados:**
   1. `PRODUCT_GAME` + `LEVEL_PACING` (Core Loop, equilíbrio matemático, curva de tensão e recompensa)
   2. `SYS_ENGINE` + `CORE_LOGIC` + `AI_BEHAVIOR` (Game loop com `deltaTime`, Object Pooling, Input Buffering, máquina de estados)
@@ -26,13 +28,14 @@ Quando o usuário diz a ideia dele, classifique o projeto no `thinking` e ative 
   4. `ANIM_RIG` + `VFX_LIGHT` + `SFX_FOLEY` + `TECH_AUDIO` + `MUSIC_COMP` (Partículas em 3 camadas, screen shake controlado, motor WebAudio sintetizado com variação de pitch)
   5. `QA_FUNC` + `QA_VISUAL` + `QA_AUDIO` + `QA_PERF` (Zero vazamento de memória, zero loop de som órfão, 60fps constantes)
 
-### Tipo C: Site Institucional / Landing Page de Alta Conversão / Portfólio
-* **Foco Crítico:** Impacto visual nos primeiros 3 segundos, narrativa envolvente, animações fluidas e performance.
-* **Sequência de Especialistas Ativados:**
+### Tipo C: Site Institucional / Landing Page / Portfólio Web / Lookbook / Loja Editorial
+* **Foco Crítico:** Impacto visual nos primeiros 3 segundos, direção de arte única por projeto, interações sob medida e performance.
+* **Pipeline Obrigatório:** Acionar **`skills/creative-web-orchestrator/SKILL.md`** (5 Etapas: Intake de marca/produtos -> Plano Criativo + Prompts de Imagem e Animação por seção + Barra de Progresso -> Coleta/Recorte Orgânico `asset-pipeline.md` -> Motores 3D/Canvas/Scroll `interaction-engines.md` -> Auditoria Visual Real).
+* **Especialistas de Apoio:**
   1. `ART_DIRECTOR` + `NARRATIVE_COPY` (Identidade visual marcante, títulos fortes sem clichês de IA)
-  2. `UX_DESIGN` + `UI_ENGINEER` + `TECH_ART` (Hierarquia de leitura, contraste, iluminação guiada)
+  2. `UX_DESIGN` + `UI_ENGINEER` + `TECH_ART` (Hierarquia de leitura, contraste, borda zero-emenda e material único)
   3. `ANIM_RIG` + `VFX_LIGHT` (Coreografia de entrada escalonada e transições suaves)
-  4. `QA_VISUAL` + `QA_PERF` + `PLAYTEST_LQA` (Responsividade total e carregamento instantâneo)
+  4. `QA_VISUAL` + `QA_PERF` + `PLAYTEST_LQA` (Responsividade total, console limpo e carregamento instantâneo)
 
 ---
 

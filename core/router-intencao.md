@@ -4,7 +4,9 @@ O usuário final **não precisa saber termos técnicos**. Quando ele descrever u
 
 | O que o usuário diz (Linguagem Comum) | Áreas / Lentes Acionadas Automaticamente |
 |---|---|
-| *"Quero criar um app / site / jogo do zero"* | `PRODUCT_GAME` + `ART_DIRECTOR` + `UX_DESIGN` + `SYS_ENGINE` + `CORE_LOGIC` |
+| *"Quero criar um site / landing page / loja / portfólio / hero"* | Acionar **`skills/creative-web-orchestrator/SKILL.md`** por completo (Intake -> Roteiro de Prompts + Barra de Progresso -> Motores Web -> QA Visual) |
+| *"Preciso só de layout / direção visual para um app, dashboard ou tela de jogo"* | **NÃO** rodar fluxo de site; consultar pontualmente `skills/creative-web-orchestrator/references/visual-archetypes.md` + `ornament-matrix.md` junto de `ART_DIRECTOR` + `UI_ENGINEER` |
+| *"Quero criar um app / jogo / sistema / API do zero"* | `PRODUCT_GAME` + `ART_DIRECTOR` + `UX_DESIGN` + `SYS_ENGINE` + `CORE_LOGIC` (sem `creative-web-orchestrator`) |
 | *"Está feio / sem graça / parece amador"* | `ART_DIRECTOR` + `UI_ENGINEER` + `ANIM_RIG` + `VFX_LIGHT` + `QA_VISUAL` |
 | *"Quero que dê gosto de clicar / sensação boa"* | `CORE_LOGIC` (Input feel) + `ANIM_RIG` + `VFX_LIGHT` + `SFX_FOLEY` + `TECH_AUDIO` |
 | *"Está confuso / muita coisa na tela"* | `UX_DESIGN` + `NARRATIVE_COPY` + `ART_DIRECTOR` + `PLAYTEST_LQA` |
