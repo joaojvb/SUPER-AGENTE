@@ -28,6 +28,10 @@ Este arquivo garante que o agente **nunca perca o rumo** mesmo quando o usuário
   - Criação de `core/staff-engineering-gate.md` e integração no `SKILL.md`, `core/thinking-protocol.md`, `AGENTS.md`, `CLAUDE.md` e `.cursorrules`.
   - Atacados os 3 pontos cegos onde IAs comuns caem para Estagiário/Júnior (`ARCH_VISION_GATE`, `PRODUCT_CONTEXT_GATE`, `ACCOUNTABILITY_GATE`).
   - Adicionado o **`SENIORITY_SCORECARD_GATE` (Rubrica Anti-Elogio 0–10 + Cargo por Parte e no Todo + Auto-Crítica dos 3 Edge Cases de Produção + Refatoração Iterativa Módulo por Módulo para 9.5+ Sênior/Staff)** de forma 100% nativa, sem o usuário precisar lembrar ou colar prompts de auditoria.
+- [x] **Etapa 12 (Absorção Massiva dos 6 Sites Web de Produção de `site.md`):**
+  - Deduplicação completa de 14 blocos (220 KB, 3.176 linhas) em **6 arquiteturas web únicas** (`Aethera®`, `JWT 3D Cylinder`, `Agency Liquid Glass`, `Prisma Studio`, `Fernhollow 3D Valley`, `Try the Look. — Nike Runway`).
+  - Criação de **3 novos DNAs Visuais** em `knowledge-feed/visual-vault/style-guides-extraidos/` (`07-editorial-minimal-gallery-runway`, `08-dark-cinema-liquid-glass`, `09-organic-botanical-3d-valley`).
+  - Injeção das técnicas de renderização e física em `areas/01-engenharia/graphics-rendering.md` (fatias 3D CSS, projeção anelar WebGL-free, `Feet Alpha Grounding`, `feTurbulence`), `areas/03-visual-e-arte/animation-rigging.md` (molas `K=95`, FLIP, `BlurText`, `AnimatedLetter` via `useScroll`, cursor com inércia), `areas/03-visual-e-arte/ui-engineer.md` (`mask-composite` liquid glass, `--u` viewport lock, teleporte `.rw-sheet-host`, `prefers-reduced-motion`) e `knowledge-feed/code-patterns/clean-modular-architecture.md` (`FadingVideo` rAF, Hover State Bus, blindagem de catálogo/carrinho local).
 
 ## 🎯 Próximos Passos Disponíveis (Quando Você Quiser)
 - [ ] **Teste Real de Fogo (Validação Prática):** Você me dar uma ideia simples de uma única linha (como um usuário leigo faria) para você ver o **Super-Agente** em ação criando o Plano de Ação Adaptativo e construindo com as 28 áreas.

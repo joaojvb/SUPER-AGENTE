@@ -39,4 +39,15 @@ Ao construir aplicações Desktop de alta frequência (Overlays transparentes, H
 7. **Camada de Controle do Operador (`MainForm.cs`):**
    * Interface de configuração (estilo `05-yuno-dark-obsidian-utility`) separada do loop de renderização do overlay, comunicando-se via estado reativo thread-safe.
 
+### 4. Componentes e Contratos de Alta Resiliência Web (`site.md`)
+
+1. **Loop Contínuo Sem Corte Visível para Vídeos de Fundo (`FadingVideo` / `rAF Time-Monitor`):**
+   * Loop nativo HTML `<video loop>` frequentemente dá um tranco visível no corte do último frame. Implementar monitoramento leve via `requestAnimationFrame` ou `timeupdate`: iniciar com `opacity: 0`, fazer fade-in em `500ms` ao `loadeddata`, iniciar fade-out `550ms` antes de `video.duration` e, no evento `ended`, aguardar `100ms` com opacidade zero, zerar `currentTime = 0` e disparar `play()` (ou avançar no array de fontes).
+2. **Sincronia Visual-WebGL-Áudio Orientada a Transição (`Hover State Bus`):**
+   * Desacoplar a UI HTML (camada `.ui` em `pointer-events: none` com apenas links/botões interativos) da cena pesada de renderização e da engine de som, comunicando intenções via hooks explícitos (`startHoverTransition()` / `stopHoverTransition()`), sem jamais acoplar manipulação do loop 3D dentro de componentes de texto/botão.
+3. **Blindagem de Carrinho / Shortlist Local e Validação em Tempo de Execução:**
+   * Todo catálogo JSON importado deve passar por validação explícita (ID string, preço finito `>= 0`, variantes com ID seguro e disponibilidade booleana) com mensagens de falha amigáveis em região `aria-live="polite" role="status"`.
+   * Toda leitura/escrita em `localStorage` deve ficar envolta em `try/catch`, sanitizando inteiros seguros, limitando quantidades (ex: `1..20`) e teto máximo de itens (ex: `50`).
+   * **Regra Anti-Erro Comercial:** Em seleções múltiplas (*"Adicionar look completo"*), nunca chutar ou confirmar silenciosamente o tamanho pré-marcado padrão sem interação explícita do usuário (`dataset.touched`); se faltarem escolhas confirmadas, abrir o seletor do primeiro item pendente e listar os nomes faltantes.
+
 <!-- A IA adiciona automaticamente aqui novos padrões quando você colar códigos de exemplo no chat -->
