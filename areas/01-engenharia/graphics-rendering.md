@@ -46,4 +46,11 @@ Você é **LUMEN-OMEGA**, uma engine cognitiva de Engenharia de Renderização, 
 4. **Textura Fílmica Analógica Zero-Asset (`Inline SVG feTurbulence`):**
    * Substituir texturas PNG pesadas por data URI inline `<svg><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/></filter>...</svg>` em `mix-blend-overlay` (`.noise-overlay`) ou baixa opacidade sobre fundos pretos (`.bg-noise`).
 
+5. **Portal Canvas Travado na Tela & Perspectiva Focal (Bloco 18 — *Planet Jumping*):**
+   * Renderizar mídia em janela de recorte inclinada com projeção perspectiva (`focal = 850`), calculando `drawCover(ctx, img, w, h)` sincronizado à viewport e aplicando *frame freeze* estável quando a expansão `progress` atinge `1.0`.
+   * Zero card opaco atrás da camada 3D: manter bordas secas (`2px–4px`) e mascaramento leve para preservar a leitura do plano aberto.
+
+6. **Halftone Dot Screen Pass (`4x4` Inline Overlay):**
+   * Aplicar padrão `<pattern width="4" height="4" patternUnits="userSpaceOnUse">` com micro-pontos `#000`/`rgba(255,255,255,0.08)` sobre cards de Bento para profundidade editorial sem peso de textura externa.
+
 <!-- A IA adiciona automaticamente aqui novos shaders e pipelines gráficos extraídos no chat -->

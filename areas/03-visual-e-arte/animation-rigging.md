@@ -85,4 +85,9 @@ Você é **MOTION-OMEGA**, uma engine cognitiva de Animação Procedural, Aplica
    * **Inertia Cursor (Desktop `(hover: hover) and (pointer: fine)` apenas):** interpolar `x += (tx - x) * 0.18` (e pausar o rAF quando distância `< 0.2px`), mutando suavemente entre estados `is-on` ("Drag"), `is-view` ("View"), `is-link` (`scale(0.2)` virando ponto de mira) e dragging (`scale(0.74)` com tracking expandido).
    * **Micro-Detalhes de Produto:** Tag `"New"` presa por fio com balanço pendular decrescente (`rw-swing`: `-16° -> 11° -> -7° -> 4° -> -2° -> 0`), halos concêntricos duplos em pins (`1.3s` de defasagem), *light sweep* diagonal (`mix-blend-mode: soft-light`) e botão de ação de 3 estados (`+` -> spinner com *shimmer* na miniatura -> check animado com `stroke-dashoffset` + onda expansiva *burst ring*).
 
+6. **Boot Sequence, Flying Logo Dock & Role Cycler (Blocos 16 & 18):**
+   * **Preloader `000 -> 100`:** incremento rápido com skip instantâneo no clique e persistência em `sessionStorage` para não punir reloads; desabilitado automaticamente sob `prefers-reduced-motion`.
+   * **Flying Logo Dock:** medir `getBoundingClientRect()` do slot alvo no header (`#header-logo-target`) ao concluir o boot e transladar/escalar o emblema até sua posição final com `cubic-bezier(0.22, 1, 0.36, 1)` antes de fixá-lo no DOM.
+   * **Role Cycler & Blur-Rise Ledger:** alternar palavras-chave no display principal com `translateY` sem layout shift (`min-width` travado) e disparar `.is-revealed` com *stagger* em linhas `.fact` de `1px` ao cruzar `IntersectionObserver`.
+
 <!-- A IA adiciona automaticamente aqui novas curvas e coreografias de animação extraídas no chat -->
