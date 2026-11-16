@@ -90,4 +90,16 @@ Você é **MOTION-OMEGA**, uma engine cognitiva de Animação Procedural, Aplica
    * **Flying Logo Dock:** medir `getBoundingClientRect()` do slot alvo no header (`#header-logo-target`) ao concluir o boot e transladar/escalar o emblema até sua posição final com `cubic-bezier(0.22, 1, 0.36, 1)` antes de fixá-lo no DOM.
    * **Role Cycler & Blur-Rise Ledger:** alternar palavras-chave no display principal com `translateY` sem layout shift (`min-width` travado) e disparar `.is-revealed` com *stagger* em linhas `.fact` de `1px` ao cruzar `IntersectionObserver`.
 
+### 3.3. Armadilhas Críticas de CSS/Scroll & Coreografias de Elite (`scroll.md` + `type-and-text-motion.md`)
+1. **Regra do Estado Sempre Visível (`Zero Dead Opacity Trap`):**
+   * Nunca depender exclusivamente de `IntersectionObserver` sem varredura no scroll para tirar elementos de `opacity: 0`: pulos via âncora (`#id`) ou `scrollTo` rápido deixam cards e seções invisíveis. Associar sempre um sweep `rAF`-throttled em `scroll` + `resize` verificando `rect.top <= innerHeight + 120` + `rootMargin: '120px 0px'` (e estado imediato visível sob `prefers-reduced-motion` ou JS ausente).
+2. **Regra do `overflow-x: clip` vs `position: sticky`:**
+   * **NUNCA** aplicar `overflow-x: hidden` em `body` ou ancestrais de uma coluna `position: sticky` — isso força `overflow-y: auto` no navegador e mata o sticky silenciosamente. Usar sempre `overflow-x: clip` e adicionar `scroll-margin-top` nas seções com `id` para a barra fixa não cobrir títulos.
+3. **Abertura Escalonada Hero (`Blur-Rise` + `Settle-Zoom` de Fundo):**
+   * Animar fundo fotográfico assentando de `scale(1.08) -> scale(1)` em `1.8s expo`, enquanto nav desce suave e as linhas do título entram por etapa com `blur(10px) -> 0` e `translateY(26px -> 0)` em `100ms–140ms` de diferença.
+4. **Iluminação Progressiva de Manifesto Ligada ao Scroll (`Scroll-Linked Word Reveal`):**
+   * Quebrar frases-chave de manifesto em palavras individuais (`opacity: 0.20` base) e interpolar cada palavra sequencialmente até `opacity: 1.0` proporcional ao progresso da seção no viewport via `requestAnimationFrame` passivo.
+5. **Atenuação Lateral em Carrosséis 3D no Mobile (`W < 680px`):**
+   * Em viewports estreitas onde o card frontal ocupa quase 100% da largura, cards laterais não podem manter `opacity: 1` nem `radiusX` grande, senão textos colidem por cima do centro. Atenuar `opacity = max(0, 1 - |phi| * 1.45)`, reduzir escala traseira (`depthNorm * 0.42`) e travar `pointer-events: none` nos cards fora de foco (`|phi| >= 0.35`).
+
 <!-- A IA adiciona automaticamente aqui novas curvas e coreografias de animação extraídas no chat -->

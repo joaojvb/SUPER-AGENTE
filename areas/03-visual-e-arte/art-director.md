@@ -211,4 +211,7 @@ Para que uma imagem, cena 3D ou interface cause impacto visceral, o observador d
   * `ascii.krackeddevs.com` -> Estética terminal retro-futurista em âmbar/fósforo e renderização ASCII em tempo real.
   * `bookofshapes.com/?tag=grid` -> Sistemas de grids suíços, geometria modular e ancoragem tipográfica.
 
+### 12.6. Direção de Arte para Interfaces Web (Editorial Gallery vs Tech Dashboard)
+* **A Mídia Governa, a Interface Sussurra:** Em páginas de apresentação/vitrines autorais, não competir com a fotografia ou com o objeto 3D enchendo a tela de badges coloridos e painéis escuros. Definir fundo profundo contínuo (`#05070B`), tinta quente (`#F2EFE9`), uma única cor de destaque contida (`--accent`) e no máximo 1 família display contrastante (ex.: `Instrument Serif` italic em tom calmo) sobre sans limpa leve (`Inter` `300/400`).
+
 <!-- A IA adiciona automaticamente aqui novos Style Guides e referências extraídas de imagens enviadas no chat -->

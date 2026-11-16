@@ -35,6 +35,9 @@ Este arquivo garante que o agente **nunca perca o rumo** mesmo quando o usuário
 - [x] **Etapa 13 (Ingestão dos Blocos 16, 18 e 19 de `site.md` — 312 KB):**
   - Deduplicação dos novos blocos adicionados a `site.md` (4.563 linhas): **Bloco 16** (Dark Steel Portfolio, `000->100`, Role Cycler, Bento `7/5/5/7` com Halftone `4x4`, Marquee & Sticky Split), **Bloco 18** (*Planet Jumping* Canvas Portal `focal=850`, Flying Logo Dock, Dual-Ring Cursor & `1px` Blur-Rise Ledger) e **Bloco 19** (*Asme* `Instrument Serif` + Editorial Split `50/50`).
   - Criação de `10-obsidian-portal-cinema-bento.dna.md` e expansão de `areas/01-engenharia/graphics-rendering.md` e `areas/03-visual-e-arte/animation-rigging.md`.
+- [x] **Etapa 14 (Absorção Editorial Craft & Blindagem Anti-Tech-Slop via `motionsites/craft.md` + QA Real da Lojinha Faudon):**
+  - Criação do **DNA 11** (`11-editorial-gallery-sculptural.dna.md` — Obsidiana `#05070B` + Marfim `#F2EFE9` + Itálico suave `#9DB7D4`, primeira dobra limpa, pílulas esculturais e mídia sem caixa opaca).
+  - Atualização estrutural em `ui-engineer.md`, `animation-rigging.md`, `art-director.md`, `qa-visual-cosmetic.md` e `master-auto-qa.md`: regras nativas de espaço de respiro (`96px–152px`), H1 peso `400/500`, zero enxame ciano/emojis em UI, `overflow-x: clip` obrigatório para `position: sticky`, fallback de `reveal` por coordenada no scroll (zero elemento preso em `opacity: 0`), iluminação palavra-por-palavra guiada por scroll e atenuação lateral de carrosséis 3D mobile (`< 680px`).
 
 ## 🎯 Próximos Passos Disponíveis (Quando Você Quiser)
 - [ ] **Teste Real de Fogo (Validação Prática):** Você me dar uma ideia simples de uma única linha (como um usuário leigo faria) para você ver o **Super-Agente** em ação criando o Plano de Ação Adaptativo e construindo com as 28 áreas.

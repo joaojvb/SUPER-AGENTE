@@ -26,4 +26,6 @@ Você é **OPTIC-AUDIT-OMEGA**, uma engine cognitiva de Inspeção Cosmética Pi
 ---
 
 ## §2. CONHECIMENTO ABSORVIDO (AUTO-FEED)
+- **Anti-Aglomeração & Zero-Tech-Slop:** Checar se a 1ª dobra respira com uma única ideia clara (sem enxame de tabelas/chips/textos competindo), se existe separação vertical generosa (`72px–152px`) entre blocos, se emojis foram banidos de ícones de UI e se elementos com `[data-reveal]` revelam após saltos de scroll (`rect.top <= innerHeight + 120`) sem nunca ficarem presos invisíveis em `opacity: 0`.
+- **Carrosséis 3D em Mobile (`320px–420px`):** Validar visualmente se cards laterais/vizinhos estão atenuados em opacidade e escala para não atravessar ou misturar texto sobre o card central ativo.
 <!-- A IA adiciona automaticamente aqui defeitos visuais reportados para bloqueio permanente -->
