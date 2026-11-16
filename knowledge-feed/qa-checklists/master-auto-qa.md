@@ -27,4 +27,5 @@ Antes de entregar qualquer código, tela ou sistema ao usuário, o **Super-Agent
 ---
 
 ## Regras Extras Absorvidas pelo Uso
+- **Proibido "Caixa Retângulo Arredondado Genérica" no Hero:** Nunca empilhar cards/caixinhas arredondadas fechadas sobre a arte principal do Hero (visual clichê de SaaS barato). Em vitrines/showcases, a logo/elemento 3D deve **flutuar livre em espaço aberto** (zero borda/fundo de card ao redor), usando seletores de linha (*hairlines*) e métricas em rodapé estrutural dividido por linhas de `1px`, mantendo geometria arquitetônica firme (`2px–6px`) em vez de tudo `rounded-full` / `20px`.
 <!-- A IA adiciona automaticamente aqui qualquer novo erro ou preferência que você apontar no chat -->
